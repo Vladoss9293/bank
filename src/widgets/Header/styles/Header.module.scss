@@ -1,0 +1,62 @@
+$primary-color: #3498db;
+
+.header {
+    display: flex;
+  width: 100%;
+  justify-content: center;
+  height: 50px;
+  border-bottom: 2px solid rgb(167, 167, 167);
+  background-color: rgb(255, 255, 255);
+
+  .baseContent {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.leftSection {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .logoCBank {
+        width: 30px;
+        height: 30px;
+    }
+    .nameLogo {
+        font-size: 18px;
+        font-weight: 600;
+        font-family: sans-serif;
+    }
+}
+
+.rightSection {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+    .signIn {
+        cursor: pointer;
+        font-weight: bold;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0px 5px 0px 5px;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+#nightTheme {
+    background-color: rgb(17, 17, 17);
+    color: white;
+}
+
+#sunTheme {
+    background-color: rgb(255, 255, 255);
+    color: rgb(17, 17, 17);
+}
