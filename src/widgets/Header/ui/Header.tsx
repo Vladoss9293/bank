@@ -9,7 +9,7 @@ export default function Header() {
     const currentTheme = useAppSelector(selectCurrentTheme);
 
   return (
-    <header id={currentTheme == 'white' ? styles.sunTheme : styles.nightTheme} className={styles.header}>
+    <header id={currentTheme == 'white' ? styles.whiteTheme : styles.nightTheme} className={styles.header}>
         <main className={styles.baseContent}>
             <section className={styles.leftSection}>
                 <img className={styles.logoCBank} src={logoC} alt="" />

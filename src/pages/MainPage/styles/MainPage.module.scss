@@ -1,3 +1,10 @@
+.contentWrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 1175px;
+}
+
 #nightTheme {
     background-color: rgb(17, 17, 17);
     color: white;

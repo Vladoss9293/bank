@@ -1,11 +1,8 @@
-$primary-color: #3498db;
-
 .header {
     display: flex;
   width: 100%;
   justify-content: center;
   height: 50px;
-  border-bottom: 2px solid rgb(167, 167, 167);
   background-color: rgb(255, 255, 255);
 
   .baseContent {
@@ -52,11 +49,13 @@ $primary-color: #3498db;
 }
 
 #nightTheme {
-    background-color: rgb(17, 17, 17);
-    color: white;
+    background-color: #010409;
+    color: #F0F6FC;
+    border-bottom: 1px solid #3C434D;
 }
 
-#sunTheme {
-    background-color: rgb(255, 255, 255);
+#whiteTheme {
+    border-bottom: 1px solid #D0D8E0;
+    background-color: #F6F8FA;
     color: rgb(17, 17, 17);
 }

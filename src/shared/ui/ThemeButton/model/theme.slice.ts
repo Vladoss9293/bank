@@ -9,7 +9,7 @@ type ThemeStatus = {
 };
 
 const initialThemeState: ThemeStatus = {
-  themeStatus: "white",
+  themeStatus: "black",
 };
 
 export const themeSlice = createSlice({

@@ -1,9 +1,12 @@
 .footer {
-    border-top: 2px solid rgb(167, 167, 167);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
 }
 
 #nightTheme {
-    background-color: rgb(17, 17, 17);
+    background-color: #0D1117;
     color: white;
 }
 

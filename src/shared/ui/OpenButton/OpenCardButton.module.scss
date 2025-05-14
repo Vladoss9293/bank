@@ -1,0 +1,23 @@
+.btnRedirect {
+    width: 100%;
+    border: none;
+    background-color: green;
+    height: 45px;
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 20px;    
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    transition: background-color ease 500ms;
+    
+    &:hover {
+        background-color: rgb(10, 94, 10);    
+    }
+}
+
+#nightTheme {
+    color: white;
+}
+
+#whiteTheme {
+    color: white;
+}
