@@ -5,11 +5,11 @@ import {
 } from "../../../../app/providers/StoreProvider/config/redux";
 
 type ThemeStatus = {
-  themeStatus: "white" | "black";
+  themeStatus: "light" | "dark";
 };
 
 const initialThemeState: ThemeStatus = {
-  themeStatus: "black",
+  themeStatus: "dark",
 };
 
 export const themeSlice = createSlice({
@@ -20,7 +20,7 @@ export const themeSlice = createSlice({
   },
   reducers: {
     changeTheme: (state) => {
-        state.themeStatus = state.themeStatus == 'black' ? 'white' : 'black';
+        state.themeStatus = state.themeStatus == 'dark' ? 'light' : 'dark';
     }
   },
 }).injectInto(rootReducer);

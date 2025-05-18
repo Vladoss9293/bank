@@ -9,7 +9,7 @@ import { themeSlice } from "./model/theme.slice";
 export function ThemeButton() {
   const dispatch = useAppDispatch();
   
-  const themeState = useAppSelector((state) => {
+  const currentStateTheme = useAppSelector((state) => {
     return themeSlice.selectors.currentTheme(state);
   });
 
@@ -21,11 +21,11 @@ export function ThemeButton() {
     <button
       onClick={changeTheme}
       id={styles.themeCustomButton}
-      className={themeState == 'white' ? styles.sun : styles.night}
+      className={currentStateTheme == 'light' ? styles.light : styles.dark}
     >
       <span
         id={styles.themeChangeTime}
-        className={themeState == 'white' ? styles.sun : styles.night}
+        className={currentStateTheme == 'dark' ? styles.light : styles.dark}
       ></span>
     </button>
   );

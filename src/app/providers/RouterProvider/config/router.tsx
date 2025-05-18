@@ -9,6 +9,13 @@ export const router = createBrowserRouter([
       })),
   },
   {
+    path: "/register",
+    lazy: () =>
+      import('../../../../pages/RegisterPage').then((m) => ({
+        Component: m.RegisterPage,
+      }))
+  },
+  {
     path: "*",
     loader: () => redirect("/"),
   },

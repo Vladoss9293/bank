@@ -9,7 +9,7 @@ export default function Header() {
     const currentTheme = useAppSelector(selectCurrentTheme);
 
   return (
-    <header id={currentTheme == 'white' ? styles.whiteTheme : styles.nightTheme} className={styles.header}>
+    <header id={currentTheme == 'light' ? styles.lightTheme : styles.darkTheme} className={styles.header}>
         <main className={styles.baseContent}>
             <section className={styles.leftSection}>
                 <img className={styles.logoCBank} src={logoC} alt="" />
@@ -19,7 +19,9 @@ export default function Header() {
             </section>
             <section className={styles.rightSection}>
                 <h2 className={styles.signIn}>
-                    Войти в личный кабинет    
+                    <a style={currentTheme == 'light' ? {color: "black"} : {color: "white"}} href="/register">
+                        Войти в личный кабинет    
+                    </a>
                 </h2>
                 <ThemeButton />
             </section>

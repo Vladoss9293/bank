@@ -1,16 +1,52 @@
 .footer {
+    border-top: 1px dotted red;
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 100px;
+    gap: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     width: 100%;
+
+    .about {
+        display: flex;
+        position: relative;
+        align-items: center;
+        opacity: 0.6;
+    }
+
+    .about::before {
+        content: '';
+        position: absolute;
+        transform: translate(-50%, -50%);
+        width: 2px;
+        left: 186px;
+        top: 13px;
+        height: 18px;
+        background-color: white;
+    }
+
+    .about img {
+        margin-bottom: 1px;
+    }
+
+    .supportLink {
+        gap: 15px;
+        display: flex;
+    }
+
+    .supportLink a {
+        opacity: 0.6;
+        text-decoration: none;
+    }
 }
 
-#nightTheme {
+#darkTheme {
     background-color: #0D1117;
     color: white;
 }
 
-#sunTheme {
+#lightTheme {
     background-color: rgb(255, 255, 255);
     color: rgb(17, 17, 17);
 }

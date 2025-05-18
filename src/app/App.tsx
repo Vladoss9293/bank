@@ -4,10 +4,12 @@ import "./styles/index.css"
 import "./styles/reset.css"
 import { Provider } from 'react-redux'
 import { store } from './providers/StoreProvider/config/store'
+import { BodyClassController } from '../shared/lib/theme'
 
 export default function App() {
   return (
     <Provider store={store}>
+      <BodyClassController />
       <AppRouter />
     </Provider>
   )

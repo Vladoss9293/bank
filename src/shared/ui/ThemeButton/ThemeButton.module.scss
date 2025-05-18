@@ -9,18 +9,18 @@
     transition: background-color 500ms ease;
 }
 
-#themeCustomButton.sun {
+#themeCustomButton.light {
     background-color: rgb(0, 204, 255);
 }
 
-#themeCustomButton.night {
+#themeCustomButton.dark {
     background-color: rgb(76, 0, 255);
 }
 
-#themeChangeTime.sun {
+#themeChangeTime.light {
     left: 15px;
 }
-#themeChangeTime.night {
+#themeChangeTime.dark {
     left: 45px;
 }
 

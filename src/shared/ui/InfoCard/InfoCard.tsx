@@ -1,9 +1,10 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import styles from "./InfoCard.module.scss";
-import universalCard from "../../assets/Universal-card.webp";
 import { OpenCardButton } from "../OpenButton";
 import type { ICardsList } from "../../../pages/MainPage/model/constants/cards";
 import { Skeleton } from "../Skeleton";
+import { useAppSelector } from "../../../app/providers/StoreProvider/config/redux";
+import { selectCurrentTheme } from "../ThemeButton/model";
 
 interface InfoCardProps {
   card: ICardsList;
@@ -11,13 +12,15 @@ interface InfoCardProps {
 
 export function InfoCard({ card }: InfoCardProps) {
   const [loadImg, setLoadImg] = useState(false);
+  const currentTheme = useAppSelector(selectCurrentTheme);
+
 
   useEffect(() => {
-    console.log(loadImg);
-  }, [loadImg]);
+    console.log(currentTheme);
+  }, [currentTheme]);
 
   return (
-    <article className={styles.card}>
+    <article id={currentTheme == 'light' ? styles.lightTheme : styles.darkTheme} className={styles.card}>
         <div className={styles.imageWrapper}>
             {!loadImg && <Skeleton style={{ width: '230px', height: '146.84px', borderRadius: "10px", margin: "0px 20px" }} />}
             <img

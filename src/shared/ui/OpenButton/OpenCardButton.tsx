@@ -7,7 +7,7 @@ export function OpenCardButton() {
     const currentTheme = useAppSelector(selectCurrentTheme);
 
   return (
-    <button id={currentTheme == 'white' ? styles.whiteTheme : styles.nightTheme} className={styles.btnRedirect}>
+    <button id={currentTheme == 'light' ? styles.lightTheme : styles.darkTheme} className={styles.btnRedirect}>
         Відкрити
     </button>
   )

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { Header } from '../../../widgets/Header'
 import { Footer } from '../../../widgets/Footer'
 import styles from './MainLayout.module.scss'
@@ -15,7 +15,7 @@ export default function MainLayout({ children }: Props) {
   return (
     <div style={{ width: "100%", height: "auto" }}>
         <Header />
-        <main className={styles.childrenElement} id={currentTheme == 'white' ? styles.whiteTheme : styles.nightTheme}>
+        <main className={styles.childrenElement} id={currentTheme == 'light' ? styles.lightTheme : styles.darkTheme}>
           {children}
         </main>
         <Footer />
